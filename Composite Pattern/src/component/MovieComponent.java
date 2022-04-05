@@ -1,33 +1,19 @@
 package component;
 
-public abstract class MovieComponent {
+public interface MovieComponent {
 
-    public void add(MovieComponent movieComponent) {
-        throw new UnsupportedOperationException();
-    }
+    public void add(MovieComponent movieComponent);
 
-    public void delete(MovieComponent movieComponent) {
-        throw new UnsupportedOperationException();
-    }
+    public void delete(MovieComponent movieComponent);
 
-    public MovieComponent get(int componentIndex) {
-        throw new UnsupportedOperationException();
-    }
+    public MovieComponent get(int componentIndex);
 
-    public String getName() {
-        throw new UnsupportedOperationException();
-    }
+    public String getName();
 
-    public String getDirector(){
-        throw new UnsupportedOperationException();
-    }
+    public String getDirector();
 
-    public int getReleaseYear(){
-        throw new UnsupportedOperationException();
-    }
+    public int getReleaseYear();
 
-    public void displayMovieInfo(){
-        throw new UnsupportedOperationException();
-    }
+    public void displayMovieInfo();
 
 }
