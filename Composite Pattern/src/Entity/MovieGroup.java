@@ -5,7 +5,7 @@ import component.MovieComponent;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class MovieGroup extends MovieComponent {
+public class MovieGroup implements MovieComponent {
 
     private ArrayList<MovieComponent> movieGroupList = new ArrayList<>();
 
@@ -21,12 +21,32 @@ public class MovieGroup extends MovieComponent {
         movieGroupList.add(movieComponent);
     }
 
+    @Override
+    public void delete(MovieComponent movieComponent) {
+
+    }
+
     public void remove(MovieComponent movieComponent) {
         movieGroupList.remove(movieComponent);
     }
 
     public MovieComponent get(int componentIndex){
         return (MovieComponent)movieGroupList.get(componentIndex);
+    }
+
+    @Override
+    public String getName() {
+        return null;
+    }
+
+    @Override
+    public String getDirector() {
+        return null;
+    }
+
+    @Override
+    public int getReleaseYear() {
+        return 0;
     }
 
     public String getGroupName() {
